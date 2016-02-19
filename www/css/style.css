@@ -1,0 +1,207 @@
+#left_tab{
+   margin:20px 0 20px 20px;
+   float:left;
+   width:auto;
+}
+
+#tabs{
+  list-style: none;
+  margin: 0px  0px -2px 20px;
+  overflow: hidden;
+  padding: 0;
+  width:280px;
+  x-border:1px solid blue;
+}
+
+#tabs a{
+  background: #fff;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  color: #444;
+  float: left;
+  padding: .7em 3.5em;
+  position: relative;
+  z-index:3;
+  text-decoration:none;
+}
+#tabs a::after{
+	
+  background:#fff;
+  border-top:3px solid black;
+  border-right:2px solid black;
+  border-radius: 0 5px 0 0;
+  content:'';
+  position:absolute;
+    top: -0.25em;
+	right: -.6em;
+	bottom: 0em;
+  transform: skew(15deg);
+  -o-transform:skew(15deg);
+  -moz-transform:skew(15deg);
+  -webkit-transform:skew(15deg);
+  -ms-transform:skew(15deg);
+   width: 1em;
+   z-index: 2;
+}
+.glyphicon-bottom{
+	transform: rotate(90deg);
+}
+.glyphicon-top{
+	transform: rotate(-90deg);
+}
+#content{
+    background: #fff;
+	border:2px solid black;
+	x-height: 220px;
+    padding: 1.5em;
+    position: relative;
+	width:300px;
+	z-index: 1;
+	height:230px;
+}
+#tab1 a,tr a{
+	text-decoration: underline;
+}
+#buttons{
+	margin:20px  0px 9px 20px;
+	x-border:1px solid red;
+	overflow:visible;
+	white-space:nowrap;
+}
+#buttons div{
+display:inline-block;
+}
+#buttons button,
+#form_buttons  input{
+	background:#fff;
+	border:2px solid black;
+	border-radius:0;
+	box-shadow: 3px 3px 0px black;
+	margin: 0px 5px 5px 5px;
+}
+#form_buttons  input{
+	float:right;
+}
+#form_buttons{
+	padding-right:0;
+}
+#central_content{
+	
+	border:2px solid black;
+	margin:0 20px -2px 20px;
+}
+#central_content thead{
+	background:#cccccc;
+}
+#central_content  td{
+	border-top:none;
+	border-left:2px solid black;
+}
+#central_content  tbody  tr:nth-child(last){
+	border-top:2px solid black;
+}
+#central_content tbody  tr:nth-child(last) td{
+	border-left:none;
+}
+#pagination{
+	border:2px solid black;
+	margin:0  -20px 0 20px;
+	text-align:center;
+}
+#central_content th{
+	padding-top:0px;
+	padding-bottom:5px;
+	border-bottom:none;
+	border-left:2px solid black;
+	height:10px;
+	overflow:hidden;
+	text-align:top;
+}
+#central_content th label span{
+	bottom:-7px;
+	left:0px;
+}
+#central_content label input {
+	display: none;
+}
+
+#central_content label span {
+	height: 13px;
+    width: 13px;
+	border: 2px solid black;
+	display: inline-block;
+	position: relative;
+}
+[type=checkbox]:checked + span:before {
+	content: url(image/check.png);
+	position: absolute;
+    x-color:black;
+    top: -9px;
+    left: -3px;
+}
+#central_content .list_pages{
+    border-top:2px solid black;
+    text-align: center;
+}
+
+#central_content th span{
+    text-align: right;
+    float:right;
+}
+#central_content  th:nth-child(4)
+{
+    text-align:center;
+}
+ #central_content td:nth-child(4){
+	text-align:center;
+}
+#mail_order, 
+#date_order,
+#date_order label:hover{
+	cursor: pointer;
+}
+tbody  td:nth-child(2),
+tbody  td:nth-child(3),
+tbody  td:nth-child(4){
+	cursor: pointer;
+}
+tbody  td:nth-child(2),
+tbody  td:nth-child(3){
+	color:#337ab7;
+	text-decoration:underline;
+}
+
+/*mailform*/
+#mail_form div{
+	width:550px;
+	padding-top:5px;
+	margin-left:5px;
+	margin-top:8px;
+}
+#mail_form div div{
+	padding:0;
+	width:400px;
+	float:right;
+}
+#mail_form div label
+{
+	padding-right:0;
+	width:130px;
+}
+#mail_form  input{
+	x-width:400px;
+	x-float:right;
+	border:2px solid black;
+	border-radius:0em;
+}
+#mail_form textarea{
+	width:400px;
+	height:300px;
+	resize:vertical;
+	x-float:right;
+	border:2px solid black;
+	border-radius:0em;
+}
+#mail_form div button{
+	float:right;
+}
